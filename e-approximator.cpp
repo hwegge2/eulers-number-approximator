@@ -37,7 +37,8 @@ int main()
     display = abs(display);
     cout<<" - "<<fixed<<setprecision(6)<<display;
     approx = approx - display;  //adds the current term to the total approximation
-   }
+
+  }
    else         //displays the positive terms in the series.
    {
     cout <<" + "<<fixed<<setprecision(6)<<display;
@@ -45,7 +46,7 @@ int main()
    }
    j++;         //updates the counter for the factorial
    i++;         //updates the counter for the series
-
+  }
 if (series_num > 0)     //displays the approximation, actual value, and error
  {
  e_val = exp (exponent);
@@ -55,5 +56,4 @@ if (series_num > 0)     //displays the approximation, actual value, and error
  cout <<"Approximation error is "<<fixed<<setprecision(15)<<error_approx<<"."<<endl;
  }
  return 0;
-}
 }
